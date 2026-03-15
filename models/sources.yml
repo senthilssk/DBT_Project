@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: my_snowflake_data      # This is your "source_name"
-    database: YOUR_DB_NAME       # Change to your Snowflake DB
-    schema: YOUR_SCHEMA_NAME     # Change to your Snowflake Schema
+    database: DBT_DB       # Change to your Snowflake DB
+    schema: DBT_SCHEMA     # Change to your Snowflake Schema
     tables:
       - name: my_100_records     # This is your "table_name"
