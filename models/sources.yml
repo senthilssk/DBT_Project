@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: my_snowflake_data      # This is your "source_name"
+  - name: my_snowflake_project      # This is your "source_name"
     database: DBT_DB       # Change to your Snowflake DB
     schema: DBT_SCHEMA     # Change to your Snowflake Schema
     tables:
