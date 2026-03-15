@@ -1,8 +1,8 @@
 version: 2
 
 sources:
-  - name: my_snowflake_project      # This is your "source_name"
-    database: DBT_DB       # Change to your Snowflake DB
-    schema: DBT_SCHEMA     # Change to your Snowflake Schema
+  - name: my_raw_data
+    database: DBT_DB      # Check if this is your actual DB name
+    schema: DBT_SCHEMA    # Check if this is your actual Schema
     tables:
-      - name: dbt_target_table     # This is your "table_name"
+      - name: SOURCE_TABLE # This MUST be the name of the existing 100-record table

@@ -10,5 +10,5 @@ test-paths: ["tests"]
 analysis-paths: ["analyses"]
 
 models:
-  my_snowflake_project:
+  my_snowflake_project: # This MUST match the 'name' at the top
     +materialized: table
