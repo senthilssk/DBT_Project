@@ -1,0 +1,14 @@
+name: 'my_snowflake_project'
+version: '1.0.0'
+config-version: 2
+
+profile: 'default'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+analysis-paths: ["analyses"]
+
+models:
+  my_snowflake_project: # This MUST match the 'name' at the top
+    +materialized: table
