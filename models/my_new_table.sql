@@ -1,1 +1,1 @@
-SELECT * FROM {{ source('source_name', 'table_name') }}
+SELECT * FROM {{ source('my_snowflake_data', 'my_100_records') }}
