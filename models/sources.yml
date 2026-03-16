@@ -1,8 +1,8 @@
 version: 2
 
 sources:
-  - name: my_raw_data
+  - name: snowflake_stage_data
     database: DBT_DB      # Check if this is your actual DB name
     schema: DBT_SCHEMA    # Check if this is your actual Schema
     tables:
-      - name: SOURCE_TABLE # This MUST be the name of the existing 100-record table
+      - name: customer_data # This MUST be the name of the existing 100-record table
