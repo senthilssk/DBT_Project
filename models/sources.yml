@@ -1,8 +1,12 @@
 version: 2
 
 sources:
-  - name: my_raw_data
-    database: DBT_DB      # Check if this is your actual DB name
-    schema: DBT_SCHEMA    # Check if this is your actual Schema
+  - name: raw_files
+    database: DBT_DB
+    schema: DBT_SCHEMA
     tables:
-      - name: SOURCE_TABLE # This MUST be the name of the existing 100-record table
+      - name: customer_stage_table
+        # We add the external metadata here
+        external:
+          location: "@my_stage"
+          file_format: "filrst_ff"
