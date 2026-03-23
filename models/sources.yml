@@ -1,12 +1,9 @@
 version: 2
 
 sources:
-  - name: raw_files
-    database: DBT_DB
-    schema: DBT_SCHEMA
+  - name: raw
+    database: DBT_DEMO_DB
+    schema: RAW
     tables:
-      - name: customer_stage_table
-        # We add the external metadata here
-        external:
-          location: "@my_stage"
-          file_format: "filrst_ff"
+      - name: CUSTOMERS
+      - name: ORDERS
