@@ -7,3 +7,10 @@ sources:
     tables:
       - name: CUSTOMERS
       - name: ORDERS
+models:
+  - name: stg_customers
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
