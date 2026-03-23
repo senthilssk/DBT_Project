@@ -7,7 +7,7 @@ default: # This name must match the 'profile:' name in your dbt_project.yml
       user: ''    # Leave as empty string
       role: ACCOUNTADMIN       # e.g., ACCOUNTADMIN or SYSADMIN
       warehouse: COMPUTE_WH    # e.g., COMPUTE_WH
-      database: DBT_DB     # e.g., ANALYTICS_DB
-      schema: DBT_SCHEMA   # e.g., DBT_DEV
-      threads: 6
+      database: DBT_DEMO_DB     # e.g., ANALYTICS_DB
+      schema: RAW   # e.g., DBT_DEV
+      threads: 8
   target: dev
