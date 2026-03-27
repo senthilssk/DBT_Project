@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: raw
+    database: DBT_DEMO_DB
+    schema: RAW
+    tables:
+      - name: CUSTOMERS
+      - name: ORDERS
+models:
+  - name: stg_customers
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique

@@ -1,0 +1,2 @@
+select *
+from DBT_DEMO_DB.RAW.ORDERS_CDC

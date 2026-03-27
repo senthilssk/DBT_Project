@@ -1,13 +1,21 @@
-# profiles.yml
-default: # This name must match the 'profile:' name in your dbt_project.yml
+DBT_Project_Main:
+  target: dev
   outputs:
     dev:
       type: snowflake
-      account: '' # Leave as empty string
-      user: ''    # Leave as empty string
-      role: ACCOUNTADMIN       # e.g., ACCOUNTADMIN or SYSADMIN
-      warehouse: COMPUTE_WH    # e.g., COMPUTE_WH
-      database: DBT_DB     # e.g., ANALYTICS_DB
-      schema: DBT_SCHEMA   # e.g., DBT_DEV
-      threads: 6
-  target: dev
+      account: '' 
+      user: ''    
+      role: ACCOUNTADMIN
+      warehouse: COMPUTE_WH
+      database: DBT_DEMO_DB
+      schema: RAW
+      threads: 8
+    prod:
+      type: snowflake
+      account: '' # Added this line to keep it consistent with dev
+      role: ACCOUNTADMIN
+      user: SHIVANGI1.S
+      warehouse: COMPUTE_WH
+      database: DBT_DEMO_DB
+      schema: RAW
+      threads: 8
